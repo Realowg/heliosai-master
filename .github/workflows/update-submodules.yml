@@ -19,14 +19,14 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
 
-          # Initialize and update all submodules except pearai-server
-          git submodule update --init --recursive -- pear-landing-page pearai-app pearai-documentation pearai-server-issues-public pearai-submodule
+          # Initialize and update all submodules except heliod-server
+          git submodule update --init --recursive -- heliod-landing-page heliod-app heliod-documentation heliod-server-issues-public heliod-submodule
 
       - name: Update submodules
         run: |
           # Selective submodule update
           git submodule foreach '
-              if [ "$path" != "pearai-server" ]; then
+              if [ "$path" != "heliod-server" ]; then
                   git fetch
                   git checkout origin/main
               else
