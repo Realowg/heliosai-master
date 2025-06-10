@@ -1,11 +1,11 @@
 {
   "version": "2.0.0",
   "tasks": [
-    // PEARAI APP TASKS
+    // HELIOD APP TASKS
     {
-      "label": "📱 PearAI App: Watch",
+      "label": "📱 Heliod App: Watch",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/pearai-app && yarn watch",
+      "command": "cd ${workspaceFolder}/heliod-app && yarn watch",
       "problemMatcher": ["$tsc-watch"],
       "isBackground": true,
       "presentation": {
@@ -13,38 +13,38 @@
         "panel": "new",
         "group": "dev"
       },
-      "detail": "Run PearAI App in watch mode"
+      "detail": "Run Heliod App in watch mode"
     },
     {
-      "label": "📱 PearAI App: Install Dependencies",
+      "label": "📱 Heliod App: Install Dependencies",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/pearai-app && ./scripts/pearai/install-dependencies.sh",
+      "command": "cd ${workspaceFolder}/heliod-app && ./scripts/heliod/install-dependencies.sh",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
         "panel": "new",
         "group": "setup"
       },
-      "detail": "Install dependencies for PearAI App"
+      "detail": "Install dependencies for Heliod App"
     },
 
-    // PEARAI SUBMODULE TASKS
+    // HELIOD SUBMODULE TASKS
     {
       "label": "🧩 Submodule: Install and Build",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/pearai-submodule && ./install-and-build.sh",
+      "command": "cd ${workspaceFolder}/heliod-submodule && ./install-and-build.sh",
       "problemMatcher": ["$tsc"],
       "presentation": {
         "reveal": "always",
         "panel": "new",
         "group": "setup"
       },
-      "detail": "Install and build PearAI Submodule"
+      "detail": "Install and build Heliod Submodule"
     },
     {
       "label": "🧩 Submodule: ESBuild Watch",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/pearai-submodule/extensions/vscode && npm run esbuild-watch",
+      "command": "cd ${workspaceFolder}/heliod-submodule/extensions/vscode && npm run esbuild-watch",
       "problemMatcher": ["$tsc-watch"],
       "isBackground": true,
       "presentation": {
@@ -57,7 +57,7 @@
     {
       "label": "🧩 Submodule: TSC Watch",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/pearai-submodule/extensions/vscode && npm run tsc-watch",
+      "command": "cd ${workspaceFolder}/heliod-submodule/extensions/vscode && npm run tsc-watch",
       "problemMatcher": ["$tsc-watch"],
       "isBackground": true,
       "presentation": {
@@ -70,7 +70,7 @@
     {
       "label": "🧩 Submodule: GUI Dev",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/pearai-submodule/gui && npm run dev",
+      "command": "cd ${workspaceFolder}/heliod-submodule/gui && npm run dev",
       "problemMatcher": [],
       "isBackground": true,
       "presentation": {
@@ -81,11 +81,11 @@
       "detail": "Run Vite dev server for GUI component"
     },
 
-    // PEARAI ROO CODE TASKS
+    // HELIOD ROO CODE TASKS
     {
-      "label": "🚀 Roo Code: Watch",
+      "label": "🚀 Heliod Roo Code: Watch",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/PearAI-Roo-Code && npm run watch",
+      "command": "cd ${workspaceFolder}/Heliod-Roo-Code && npm run watch",
       "problemMatcher": ["$tsc-watch"],
       "isBackground": true,
       "presentation": {
@@ -93,12 +93,12 @@
         "panel": "new",
         "group": "dev"
       },
-      "detail": "Run PearAI Roo Code in watch mode"
+      "detail": "Run Heliod Roo Code in watch mode"
     },
     {
-      "label": "🚀 Roo Code: Dev",
+      "label": "🚀 Heliod Roo Code: Dev",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/PearAI-Roo-Code && npm run dev",
+      "command": "cd ${workspaceFolder}/Heliod-Roo-Code && npm run dev",
       "problemMatcher": [],
       "isBackground": true,
       "presentation": {
@@ -106,19 +106,19 @@
         "panel": "new",
         "group": "dev"
       },
-      "detail": "Run PearAI Roo Code dev server"
+      "detail": "Run Heliod Roo Code dev server"
     },
     {
-      "label": "🚀 Roo Code: Install All",
+      "label": "🚀 Heliod Roo Code: Install All",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/PearAI-Roo-Code && npm run install:all",
+      "command": "cd ${workspaceFolder}/Heliod-Roo-Code && npm run install:all",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
         "panel": "new",
         "group": "setup"
       },
-      "detail": "Install all dependencies for PearAI Roo Code"
+      "detail": "Install all dependencies for Heliod Roo Code"
     },
 
     // UTILITY TASKS
@@ -139,12 +139,12 @@
     {
       "label": "🚀 Start All Dev Servers",
       "dependsOn": [
-        "📱 PearAI App: Watch",
+        "📱 Heliod App: Watch",
         "🧩 Submodule: ESBuild Watch",
         "🧩 Submodule: TSC Watch",
         "🧩 Submodule: GUI Dev",
-        "🚀 Roo Code: Watch",
-        "🚀 Roo Code: Dev"
+        "🚀 Heliod Roo Code: Watch",
+        "🚀 Heliod Roo Code: Dev"
       ],
       "problemMatcher": [],
       "group": {
