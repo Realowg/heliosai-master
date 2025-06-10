@@ -2,7 +2,7 @@
 
 # Update all submodules except the server
 git submodule foreach '
-    if [ "$path" != "pearai-server" ]; then
+    if [ "$path" != "heliod-server" ]; then
         git fetch
         git checkout origin/main
     else
