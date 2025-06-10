@@ -1,22 +1,22 @@
-# PearAI Master Repository
+# Heliod Master Repository
 
-PearAI aims to be an inventory that curates the leading, cutting-edge AI tools in one place. Our unified interface seamlessly integrates these solutions, allowing users to effortlessly switch between tools without needing to waste effort hunting for alternatives.
+Heliod aims to be an inventory that curates the leading, cutting-edge AI tools in one place. Our unified interface seamlessly integrates these solutions, allowing users to effortlessly switch between tools without needing to waste effort hunting for alternatives.
 
-What you're seeing here is the conglomeration of all the repositories that make up the entire PearAI project. This is only the beginning, and the list shall keep expanding. For details, visit each repository individually:
+What you're seeing here is the conglomeration of all the repositories that make up the entire Heliod project. This is only the beginning, and the list shall keep expanding. For details, visit each repository individually:
 
-- [pearai-app](https://github.com/trypear/pearai-app): this is the VSCode fork part of PearAI and the outer directory of the project. It contains the bulk of the editor functionalities.
-- [pearai-submodule](https://github.com/trypear/pearai-submodule): this is the Continue fork part of PearAI and is a submodule of `pearai-app`. It contains the bulk of the AI chat functionalities.
-- [pear-landing-page](https://github.com/trypear/pear-landing-page): this is the landing page of PearAI.
-- [pearai-documentation](https://github.com/trypear/pearai-documentation): this is the [documentation page](https://trypear.ai/docs) of PearAI and is linked to from the landing page.
-- [pearai-server](https://github.com/trypear/pearai-server): this is the server of PearAI which is semi-private to maintain security. The use of PearAI server is optional, and serves as a way to provide convenience for users who do not wish to use their own API keys.
-- [pearai-server-issues-public](https://github.com/trypear/pearai-server-issues-public): this is where all the issues are listed for the PearAI server.
+- [pearai-app](https://github.com/trypear/pearai-app): this is the VSCode fork part of Heliod and the outer directory of the project. It contains the bulk of the editor functionalities.
+- [pearai-submodule](https://github.com/trypear/pearai-submodule): this is the Continue fork part of Heliod and is a submodule of `pearai-app`. It contains the bulk of the AI chat functionalities.
+- [pear-landing-page](https://github.com/trypear/pear-landing-page): this is the landing page of Heliod.
+- [pearai-documentation](https://github.com/trypear/pearai-documentation): this is the [documentation page](https://heliod.ai/docs) of Heliod and is linked to from the landing page.
+- [pearai-server](https://github.com/trypear/pearai-server): this is the server of Heliod which is semi-private to maintain security. The use of Heliod server is optional, and serves as a way to provide convenience for users who do not wish to use their own API keys.
+- [pearai-server-issues-public](https://github.com/trypear/pearai-server-issues-public): this is where all the issues are listed for the Heliod server.
 
 ## Contributing
 
-We welcome contributions from the community! Whether you're fixing a bug, improving the documentation, or adding a new feature, we appreciate your help in making PearAI better. There is a lot of context involved and we understand it can be overwhelming when first trying to join the project. Here is a quick summary of key information and how we currently work together:
+We welcome contributions from the community! Whether you're fixing a bug, improving the documentation, or adding a new feature, we appreciate your help in making Heliod better. There is a lot of context involved and we understand it can be overwhelming when first trying to join the project. Here is a quick summary of key information and how we currently work together:
 
 - We have a bunch of issues which are free to tackle (see the issues tab on individual repos). Make sure to leave a comment indicating you're working on it (check for existing comments also). You can raise a PR anytime and we usually review them pretty quickly.
-- If you notice anything about Pear that you think you could improve, then let us know!
+- If you notice anything about Heliod that you think you could improve, then let us know!
 - We have a lot on our plate so it's easy for us to miss something. The best way to get our attention is to ping us directly in our Discord server.
 
 > [!IMPORTANT]
@@ -43,19 +43,19 @@ Ensure you have the following tools installed:
 
 ## Installation
 
-To get started with PearAI development, you'll need to clone this repo (pearai-master) and install the dependencies for each component:
+To get started with Heliod development, you'll need to clone this repo (heliosai-master) and install the dependencies for each component:
 
-1. PearAI App:
+1. Heliod App:
 ```bash
 cd ./pearai-app && npm i
 ```
 
-2. PearAI Roo Code:
+2. Heliod Roo Code:
 ```bash
 cd ./pearai-roo-code && npm run install:all
 ```
 
-3. PearAI Submodule:
+3. Heliod Submodule:
 ```bash
 ./pearai-submodule/install-and-build.sh  # For Unix/Mac
 ./pearai-submodule/install-and-build.ps1 # For Windows
@@ -68,10 +68,10 @@ To start development:
 ![image](https://github.com/user-attachments/assets/2f823fef-03c6-4d0e-8966-75ff7fa0f9d8)
 
 1. Launch the development servers:
-   - In PearAI (or vscode), go to Run and Debug
+   - In Heliod (or vscode), go to Run and Debug
    - Select and run the "🚀 Start All Dev Servers" task
 
-2. Start the PearAI instance:
+2. Start the Heliod instance:
 ```bash
 ./pearai-app/scripts/code.sh  # For Unix/Mac
 ./pearai-app/scripts/code.ps1 # For Windows
@@ -83,15 +83,15 @@ To start development:
 
 ## Technology Stack
 
-- PearAI is in TypeScript/Electron.js
-- PearAI landing page is Next.js/React with Supabase auth (TailwindCSS + Shadcn)
-- PearAI backend is a Python FastAPI server with Supabase database
+- Heliod is in TypeScript/Electron.js
+- Heliod landing page is Next.js/React with Supabase auth (TailwindCSS + Shadcn)
+- Heliod backend is a Python FastAPI server with Supabase database
 - Logging/Telemetry is done with Axiom and PostHog
 
 ## Contact
 
-For any questions or issues, feel free to open an issue, or you can also reach out to us directly in the [PearAI Discord](https://discord.gg/7QMraJUsQt), or email us at [team@trypear.ai](mailto:team@trypear.ai).
+For any questions or issues, feel free to open an issue, or you can also reach out to us directly in the [Heliod Discord](https://discord.gg/heliod), or email us at [team@heliod.ai](mailto:team@heliod.ai).
 
 ## FAQ
 
-Checkout our [FAQ](https://trypear.ai/faq) on the website.
+Checkout our [FAQ](https://heliod.ai/faq) on the website.

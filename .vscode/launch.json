@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "🧩 Launch PearAI Extension Host",
+      "name": "🧩 Launch Heliod Extension Host",
       "type": "extensionHost",
       "request": "launch",
       "args": [
@@ -17,7 +17,7 @@
       "killBehavior": "polite"
     },
     {
-      "name": "📱 Attach to PearAI App",
+      "name": "📱 Attach to Heliod App",
       "type": "node",
       "request": "attach",
       "port": 9229,
@@ -30,7 +30,7 @@
       "killBehavior": "polite"
     },
     {
-      "name": "🚀 Attach to PearAI-Roo-Code",
+      "name": "🚀 Attach to Heliod Roo Code",
       "type": "node",
       "request": "attach",
       "port": 9230,
@@ -61,7 +61,7 @@
       "killBehavior": "polite"
     },
     {
-      "name": "📱 Run PearAI App Watch",
+      "name": "📱 Run Heliod App Watch",
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run watch",
@@ -104,7 +104,7 @@
         "🧩 Run Submodule GUI Dev",
         "🧩 Run Submodule Extension Watch",
         "🧩 Run Submodule TSC Watch",
-        "📱 Run PearAI App Watch",
+        "📱 Run Heliod App Watch",
         "🚀 Run Roo Code Watch",
         "🚀 Run Roo Code Dev"
       ],

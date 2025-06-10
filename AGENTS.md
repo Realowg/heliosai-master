@@ -1,6 +1,6 @@
 # Repository Guidelines for Codex Agents
 
-This repository aggregates several PearAI submodules. Only a few shell scripts
+This repository aggregates several Heliod submodules. Only a few shell scripts
 and configuration files live at the root. The submodule directories are empty by
 default and should not be edited in Codex PRs.
 
