@@ -32,7 +32,7 @@
     {
       "label": "🧩 Submodule: Install and Build",
       "type": "shell",
-      "command": "cd ${workspaceFolder}/pearai-submodule && ./scripts/install-and-build.sh",
+      "command": "cd ${workspaceFolder}/pearai-submodule && ./install-and-build.sh",
       "problemMatcher": ["$tsc"],
       "presentation": {
         "reveal": "always",
