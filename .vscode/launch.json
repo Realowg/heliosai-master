@@ -2,14 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "🧩 Launch PearAI Extension Host",
+      "name": "🧩 Launch Heliod Extension Host",
       "type": "extensionHost",
       "request": "launch",
       "args": [
-        "--extensionDevelopmentPath=${workspaceFolder}/pearai-submodule/extensions/vscode"
+        "--extensionDevelopmentPath=${workspaceFolder}/heliod-submodule/extensions/vscode"
       ],
       "outFiles": [
-        "${workspaceFolder}/pearai-submodule/extensions/vscode/out/**/*.js"
+        "${workspaceFolder}/heliod-submodule/extensions/vscode/out/**/*.js"
       ],
       "preLaunchTask": "🚀 Start All Dev Servers",
       "sourceMaps": true,
@@ -17,27 +17,27 @@
       "killBehavior": "polite"
     },
     {
-      "name": "📱 Attach to PearAI App",
+      "name": "📱 Attach to Heliod App",
       "type": "node",
       "request": "attach",
       "port": 9229,
       "restart": true,
       "sourceMaps": true,
       "outFiles": [
-        "${workspaceFolder}/pearai-app/out/**/*.js"
+        "${workspaceFolder}/heliod-app/out/**/*.js"
       ],
       "skipFiles": ["<node_internals>/**"],
       "killBehavior": "polite"
     },
     {
-      "name": "🚀 Attach to PearAI-Roo-Code",
+      "name": "🚀 Attach to Heliod-Roo-Code",
       "type": "node",
       "request": "attach",
       "port": 9230,
       "restart": true,
       "sourceMaps": true,
       "outFiles": [
-        "${workspaceFolder}/PearAI-Roo-Code/dist/**/*.js"
+        "${workspaceFolder}/Heliod-Roo-Code/dist/**/*.js"
       ],
       "skipFiles": ["<node_internals>/**"],
       "killBehavior": "polite"
@@ -47,7 +47,7 @@
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run dev",
-      "cwd": "${workspaceFolder}/pearai-submodule/gui",
+      "cwd": "${workspaceFolder}/heliod-submodule/gui",
       "skipFiles": ["<node_internals>/**"],
       "killBehavior": "polite"
     },
@@ -56,16 +56,16 @@
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run esbuild-watch",
-      "cwd": "${workspaceFolder}/pearai-submodule/extensions/vscode",
+      "cwd": "${workspaceFolder}/heliod-submodule/extensions/vscode",
       "skipFiles": ["<node_internals>/**"],
       "killBehavior": "polite"
     },
     {
-      "name": "📱 Run PearAI App Watch",
+      "name": "📱 Run Heliod App Watch",
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run watch",
-      "cwd": "${workspaceFolder}/pearai-app",
+      "cwd": "${workspaceFolder}/heliod-app",
       "skipFiles": ["<node_internals>/**"],
       "killBehavior": "polite"
     },
@@ -74,7 +74,7 @@
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run watch",
-      "cwd": "${workspaceFolder}/PearAI-Roo-Code",
+      "cwd": "${workspaceFolder}/Heliod-Roo-Code",
       "skipFiles": ["<node_internals>/**"],
       "killBehavior": "polite"
     },
@@ -83,7 +83,7 @@
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run dev",
-      "cwd": "${workspaceFolder}/PearAI-Roo-Code",
+      "cwd": "${workspaceFolder}/Heliod-Roo-Code",
       "skipFiles": ["<node_internals>/**"],
       "killBehavior": "polite"
     },
@@ -92,7 +92,7 @@
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run tsc-watch",
-      "cwd": "${workspaceFolder}/pearai-submodule/extensions/vscode",
+      "cwd": "${workspaceFolder}/heliod-submodule/extensions/vscode",
       "skipFiles": ["<node_internals>/**"],
       "killBehavior": "polite"
     }
@@ -104,7 +104,7 @@
         "🧩 Run Submodule GUI Dev",
         "🧩 Run Submodule Extension Watch",
         "🧩 Run Submodule TSC Watch",
-        "📱 Run PearAI App Watch",
+        "📱 Run Heliod App Watch",
         "🚀 Run Roo Code Watch",
         "🚀 Run Roo Code Dev"
       ],
