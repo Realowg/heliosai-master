@@ -29,7 +29,7 @@ print_message "PearAI-Roo-Code dependencies installed successfully!"
 # Step 2: Install and build PearAI submodule
 print_message "Installing and building PearAI submodule..."
 cd "$ROOT_DIR/pearai-submodule" || handle_error "Could not navigate to pearai-submodule directory"
-./scripts/install-and-build.sh || handle_error "Failed to install and build PearAI submodule"
+./install-and-build.sh || handle_error "Failed to install and build PearAI submodule"
 print_message "PearAI submodule installed and built successfully!"
 
 # Step 3: Install PearAI app dependencies
